@@ -42,9 +42,10 @@ const moonsoft =
 
 for (let i = 0; i < moonsoft.length; i++) {
 
-    console.log(moonsoft[i]["name"]);
-    console.log(moonsoft[i]["role"]);
-    console.log(moonsoft[i]["image"]);
+
+    for (const key in moonsoft[i]) {
+        console.log(moonsoft[i][key]);
+    }
 }
 
 
